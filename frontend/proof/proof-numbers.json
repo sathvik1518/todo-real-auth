@@ -1,0 +1,35 @@
+{
+  "cookie": {
+    "name": "refresh_token",
+    "httpOnly": true,
+    "path": "/api/auth",
+    "sameSite": "Strict",
+    "secure": false,
+    "expiresInDays": 7
+  },
+  "storage": {
+    "localStorage": 0,
+    "sessionStorage": 0,
+    "documentCookie": "",
+    "indexedDB": 0,
+    "tokenAnywhere": false
+  },
+  "threeRequestsOnExpiredToken": {
+    "refreshCallsInBackendLog": 1,
+    "refreshRequestsSeenByBrowser": 1,
+    "allThreeSucceeded": [
+      3,
+      3,
+      3
+    ]
+  },
+  "deleteByHand": {
+    "viewer": 403,
+    "noToken": 401,
+    "admin": 204
+  },
+  "corsPreflightsSeenInBackendLog": [
+    "/api/auth/signup",
+    "/api/todos"
+  ]
+}
